@@ -1,50 +1,66 @@
-
-# -*- coding: utf-8 -*-
-
+# -*- coding: windows-1250 -*-
 import random
+stars = "*"  * 10
+import os
+print("Witaj w symulatorze rzutu kostka")
 
-print("Symulator rzutu kostka")
+while 5>2:
+    print(stars)
+    print("MENU")
+    print("1.Losuj")
+    print("2.Wyjscie")
+    print(stars)
 
-print ("Losowanie...")
+    wybor = int(input("Co chcesz zrobic? : "))
 
-oczka = random.randint(1,6)
+    if wybor == 1:
+        os.system('CLS')
+        print("Symulator rzutu kostka")
 
-print("Wylosowano: " , oczka)
+        print("Losowanie...")
 
-border= "X" * 9
+        oczka = random.randint(1, 6)
 
-if oczka == 1:
-    row1 = "X" + "       " + "X"
-    row2 = "X" + "   O   " + "X"
-    row3 = "X" + "       " + "X"
+        print("Wylosowano: ", oczka)
 
-elif oczka == 2:
-    row1 = "X" + " O     " + "X"
-    row2 = "X" + "       " + "X"
-    row3 = "X" + "     O " + "X"
+        border = "X" * 9
 
-elif oczka == 3:
-    row1 = "X" + " O     " + "X"
-    row2 = "X" + "   O   " + "X"
-    row3 = "X" + "     O " + "X"
+        if oczka == 1:
+            row1 = "X" + "       " + "X"
+            row2 = "X" + "   O   " + "X"
+            row3 = "X" + "       " + "X"
 
-elif oczka == 4:
-    row1 = "X" + " O   O " + "X"
-    row2 = "X" + "       " + "X"
-    row3 = "X" + " O   O " + "X"
+        elif oczka == 2:
+            row1 = "X" + " O     " + "X"
+            row2 = "X" + "       " + "X"
+            row3 = "X" + "     O " + "X"
 
-elif oczka == 5:
-    row1 = "X" + " O   O " + "X"
-    row2 = "X" + "   O   " + "X"
-    row3 = "X" + " O   O " + "X"
+        elif oczka == 3:
+            row1 = "X" + " O     " + "X"
+            row2 = "X" + "   O   " + "X"
+            row3 = "X" + "     O " + "X"
 
-else:
-    row1 = "X" + " O   O " + "X"
-    row2 = "X" + " O   O " + "X"
-    row3 = "X" + " O   O " + "X"
+        elif oczka == 4:
+            row1 = "X" + " O   O " + "X"
+            row2 = "X" + "       " + "X"
+            row3 = "X" + " O   O " + "X"
 
-print(border)
-print(row1)
-print(row2)
-print(row3)
-print(border)
+        elif oczka == 5:
+            row1 = "X" + " O   O " + "X"
+            row2 = "X" + "   O   " + "X"
+            row3 = "X" + " O   O " + "X"
+
+        else:
+            row1 = "X" + " O   O " + "X"
+            row2 = "X" + " O   O " + "X"
+            row3 = "X" + " O   O " + "X"
+
+        print(border)
+        print(row1)
+        print(row2)
+        print(row3)
+        print(border)
+    elif wybor == 2:
+        break
+    else:
+        print("Podales zla liczbe!!!.Sprobuj jeszcze raz")
