@@ -21,7 +21,8 @@ while 5>2:
 
         oczka = random.randint(1, 6)
 
-        print("Wylosowano: ", oczka)
+        print("Wylosowano: ")
+        print(oczka)
 
         border = "X" * 9
 
@@ -64,3 +65,4 @@ while 5>2:
         break
     else:
         print("Podales zla liczbe!!!.Sprobuj jeszcze raz")
+
