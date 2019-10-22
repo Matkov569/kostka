@@ -1,7 +1,10 @@
 # -*- coding: windows-1250 -*-
 import random
-stars = "*"  * 10
 import os
+
+stars = "*"  * 10
+border = "X" * 9
+
 print("Witaj w symulatorze rzutu kostka")
 
 while 5>2:
@@ -24,7 +27,6 @@ while 5>2:
         print("Wylosowano: ")
         print(oczka)
 
-        border = "X" * 9
 
         if oczka == 1:
             row1 = "X" + "       " + "X"
